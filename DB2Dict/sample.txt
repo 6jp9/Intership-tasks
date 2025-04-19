@@ -1,0 +1,4 @@
+run the server- py manage.py 
+run the test.py file in another terminal or cmd prompt. before that uncomment the function calls...
+super user - user: jp
+             password: 123
