@@ -1,12 +1,3 @@
-
-# def lss(string,i=0):
-#     sub=''
-#     lst=[]
-#     while string[i] not in sub:
-#         sub+=string[i]
-#         i+=1
-#     else:
-#         lst.append(sub)
-#         sub=''
-#         lss(string,i+1)
-#     return lst
+s=969696
+x=96
+print(str(s).startswith(str(x)))
