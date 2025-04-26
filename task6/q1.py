@@ -43,12 +43,12 @@ while True:
         break
 
     if inp==2:
-        name = input('enter contact name:')
-        number = int(input('enter contact number:'))
-        if name!=None and number!=None:
+        try:
+            name = input('enter contact name:')
+            number = int(input('enter contact number:'))
             print(create_contact(name,number))
-        else:
-            print('valid name and number!!')
+        except:
+            print('invalid Name or Number!!!')
     elif inp==1:
         view_contacts()
     elif inp==3:
@@ -66,3 +66,5 @@ while True:
     else:
         print('invalid operation!!! exiting!!')
         break
+
+
