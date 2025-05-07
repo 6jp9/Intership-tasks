@@ -62,19 +62,36 @@
 
 ###################################################################
 
-lst = [7,3,8,-1,4,0,5]
-n= len(lst)
-for i in range(n):
-    for j in range(0,n-i-1):
-        if lst[j]>lst[j+1]:
-            lst[j],lst[j+1]=lst[j+1],lst[j]
-print(lst)
-mid = int(len(lst)/2)
-if len(lst)%2==0:
-    median = (lst[mid]+lst[mid-1])/2
-    print(median)
-else:
-    median=lst[mid]
-    print(median)
+# lst = [7,3,8,-1,4,0,5]
+# n= len(lst)
+# for i in range(n):
+#     for j in range(0,n-i-1):
+#         if lst[j]>lst[j+1]:
+#             lst[j],lst[j+1]=lst[j+1],lst[j]
+# print(lst)
+# mid = int(len(lst)/2)
+# if len(lst)%2==0:
+#     median = (lst[mid]+lst[mid-1])/2
+#     print(median)
+# else:
+#     median=lst[mid]
+#     print(median)
 
 ###################################################################
+
+
+# string = 'aabbabaccdcddababad'
+# lst = []
+# def pal(string,lst=lst,n=1):
+#     if n<len(string):
+#         for i in range(len(string)):
+#             sub = string[i:i+n]
+#             if sub==sub[::-1]:
+#                 lst.append(sub)
+#         return pal(string,lst,n+1)
+#     return list(set(lst))
+# print(pal(string))
+
+# ###################################################################
+
+
