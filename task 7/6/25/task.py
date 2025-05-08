@@ -38,26 +38,26 @@
 
 ###################################################################
 
-# lst = [1,2,0,4,0,3,0]
-# for i in lst:
-#     if i==0:
-#         lst.remove(i)
-#         lst.append(i)
+# lst = [1,2,1,2,3,0,0,0,4,0,3,0]
+# pos=0
+# for i in range(len(lst)):
+#     if lst[i]!=0:
+#         lst[i],lst[pos]=lst[pos],lst[i]
+#         pos+=1
 # print(lst)
 
 # ###################################################################
 
 # import math
-# dict1 = {'df': {'A':[4, 16, 25, 36], 'B': [1, 4, 9, 16]}}
+# dict1 = {'df': {'A':[4, 16, 25, 36], 'B': [1, 4, 9, 10]}}
 # for _,data in dict1.items():
 #     for _ in range(len(data['A'])):
 #         a=data['A'][0]
 #         b=data['B'][0]
-#         print(a,b)
 #         data['A'].remove(a)
-#         data['A'].append(int(math.sqrt(a)))
+#         data['A'].append(math.sqrt(a))
 #         data['B'].remove(b)
-#         data['B'].append(int(math.sqrt(b)))
+#         data['B'].append(math.sqrt(b))
 # print(dict1)
 
 ###################################################################
@@ -89,8 +89,20 @@
 #             if sub==sub[::-1]:
 #                 lst.append(sub)
 #         return pal(string,lst,n+1)
-#     return list(set(lst))
+#     lst1=list(set(lst))
+#     def dic(lst=lst1,dict1={},s=1):
+#         temp = []
+#         if s<len(lst1):
+#             for i in lst1:
+#                 if len(i)==s:
+#                     temp.append(i)
+#             if len(temp)>0:
+#                 dict1[s]=temp
+#             return dic(lst,dict1,s+1)
+#         return dict1
+#     return dic()
 # print(pal(string))
+
 
 # ###################################################################
 
