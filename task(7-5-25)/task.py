@@ -106,4 +106,28 @@
 
 # ###################################################################
 
+def intersection_area(rect1, rect2):
+    p1, q1, r1, s1 = rect1
+    p2, q2, r2, s2 = rect2
+    print( p1, q1, r1, s1)
+    print(p2, q2, r2, s2)
+
+    p = max(p1, p2)
+    q = max(q1, q2)
+    r = min(r1, r2)
+    s = min(s1, s2)
+    print(p,r,q,s)
+
+    if r > p and s > q:
+        area = (r - p) * (s - q)
+        return area
+    else:
+        return 'Rectangles are not intersected'
+
+rect1 = (1, 1, 5, 5)
+rect2 = (3, 2, 6, 4)
+
+area = intersection_area(rect1, rect2)
+print(f"The area of the intersection is: {area}")
+
 
