@@ -71,7 +71,7 @@
 #     n+=1
 
 # print(dict1)
-
+###########################################################################
 
 words = {'a': ['apple', 'angry'], 
  'b': ['banana', 'bed', 'bored', 'brave', 'bear', 'breeze', 'book', 'bag', 'box', 'blue', 'black', 'brown'], 
@@ -144,3 +144,8 @@ while True:
         print(words)
     else:
         break
+
+
+
+
+
