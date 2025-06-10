@@ -1,0 +1,77 @@
+# Time Complexity for Recursive String Problems
+
+# Q1. Sum of all digits in a string
+# Input: "a1b2c3" → Output: 6
+# Time Complexity: O(n)
+
+# Q2. Remove all duplicate characters from a string
+# Input: "aabbcc" → Output: "abc"
+# Time Complexity: O(n^2)
+
+# Q3. Return all substrings of a string
+# Input: "abc" → Output: ['a', 'ab', 'abc', 'b', 'bc', 'c']
+# Time Complexity: O(n^2)
+
+# Q4. Remove all 'x' characters from a string
+# Input: "axbxcdx" → Output: "abcd"
+# Time Complexity: O(n)
+
+# Q5. Count occurrences of a specific character
+# Input: "hello", "l" → Output: 2
+# Time Complexity: O(n)
+
+# Q6. Find all occurrences of a pattern in a string (brute-force)
+# Input: "ababcabc", "abc" → Output: [2, 5]
+# Time Complexity: O((n - m + 1) * m)
+
+# Q7. Find all palindromic substrings in a string
+# Input: "ababa" → Output: ['a', 'b', 'a', 'b', 'a', 'aba', 'bab', 'ababa']
+# Time Complexity: O(n^3)
+
+# Q8. Extract all consecutive vowels from a string
+# Input: "aabeioouu" → Output: ['aa', 'ei', 'ouu']
+# Time Complexity: O(n)
+
+###########################################################
+
+# Time Complexity for Recursive Problems (Set 2)
+
+# Q1. Sum of digits of a number using recursion
+# Input: 12345 → Output: 15
+# Time Complexity: O(log₁₀n)
+
+# Q2. Compute nCr using recursion
+# Input: N = 5, r = 2 → Output: 10
+# Time Complexity: O(2^r)
+
+# Q3. Count vowels in a string using recursion
+# Time Complexity: O(n)
+
+# Q4. Find length of a string using recursion
+# Input: "abcd" → Output: 4
+# Time Complexity: O(n)
+
+# Q5. Convert decimal to binary using recursion
+# Input: 7 → Output: 111
+# Time Complexity: O(log₂n)
+
+# Q6. Count set bits using recursion
+# Input: 21 (10101) → Output: 3
+# Time Complexity: O(log₂n)
+
+# Q7. Friend pairing problem
+# Input: n = 3 → Output: 4
+# Time Complexity: O(2^n)
+
+# Q8. Print each character of a string using recursion
+# Time Complexity: O(n)
+
+# Q9. The Lost Library of Recursia
+# Time Complexity: O(d), where d is the depth until the book is found
+
+# Q10. Dictionary sum using recursion
+# Input: {"apple": 10, "banana": 20, "cherry": 30} → Output: 60
+# Time Complexity: O(n)
+
+############################################################
+
