@@ -75,3 +75,121 @@
 
 ############################################################
 
+# Time Complexity for Recursive Problems (Set 3)
+
+# Q1.
+# def f(n):
+#     if n <= 1:
+#         return 1
+#     if n % 2 == 0:
+#         return f(n // 2)
+#     return f(n // 2) + f(n // 2 + 1)
+# Input: 11 → Output: 5
+# Time Complexity: O((log n)²)
+
+# Q2.
+# def f(n):
+#     i = [1]
+#     if n >= 5:
+#         return n
+#     n = n + i[0]
+#     i[0] += 1
+#     return f(n)
+# Input: 1 → Output: 5
+# Time Complexity: O(1) — bounded steps
+
+# Q3. 
+# def function(num):
+#     if num > 0:
+#         function(num - 1)
+#         print(num - 1, end='')
+#         function(num - 1)
+# Input: 3 → Output: 0102010
+# Time Complexity: O(2^n)
+
+# Q4.
+# def fun1(n):
+#     if n == 0:
+#         return
+#     print(n, end='')
+#     fun2(n - 2)
+#     print(n, end='')
+# def fun2(n):
+#     if n == 0:
+#         return
+#     print(n, end='')
+#     fun1(n + 1)
+#     print(n, end='')
+# Input: 3 → Output: 312213
+# Time Complexity: O(n²) — due to mutual recursion depth
+
+# Q5.
+# def func(n):
+#     if n < 3:
+#         return 1
+#     return func(n - 1) + func(n - 3) + 1
+# Input: 5 → Output: 7
+# Time Complexity: O(2^n)
+
+# Q6.
+# def foo(n, r):
+#     if n > 0:
+#         return (n % r) + foo(n // r, r)
+#     return 0
+# Input: foo(513, 2) → Output: 2
+# Time Complexity: O(log n)
+
+##################################################################
+
+# Time Complexities for Recursive Problems (Set 4)
+
+# Q1.
+# Time Complexity: O(n)
+
+# Q2.
+# Time Complexity: O(1)
+
+# Q3.
+# Time Complexity: O(x)
+
+# Q4.
+# Time Complexity: O(n)
+
+# Q5.
+# Time Complexity: O(2^n)
+
+# Q6.
+# Time Complexity: O(x + y) — worst case due to fun2's recursion depth
+
+# Q7.
+# Time Complexity: O(n)
+
+# Q8.
+# Time Complexity: O(2^n)
+
+# Q9.
+# Time Complexity: O((log n)^2)
+
+# Q10.
+# Time Complexity: O(n)
+
+######################################################################
+
+# Time Complexities for Problem (Set 5)
+
+# Q1. Chocolate eating problem (Ishaan and sister)
+# Time Complexity: O(n)
+
+# Q2. Fractional Knapsack Problem (can break items)
+# Time Complexity: O(n log n)
+
+# Q3. Insertion into Binary Search Tree using recursion (returning tree as dictionary)
+# Time Complexity: O(h) — where h is height of tree (O(log n) for balanced BST, O(n) worst case)
+
+# Q4. Bheem and ladoos (maximum number of friends)
+# Time Complexity: O(n log n)
+
+# Q5. Maximum product of two numbers in array
+# Time Complexity: O(n)
+
+####################################################################
